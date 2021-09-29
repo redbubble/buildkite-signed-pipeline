@@ -33,6 +33,11 @@ func TestUnsignedCommandValidation(t *testing.T) {
 			false,
 		},
 		{
+			"Redbubble's upload pattern",
+			`./script/upload_pipeline`,
+			true,
+		},
+		{
 			"Simple signed upload",
 			fmt.Sprintf("%s upload", thisTool),
 			true,

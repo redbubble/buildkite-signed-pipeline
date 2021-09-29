@@ -34,6 +34,11 @@ func isUploadCommand(command string) bool {
 		}
 	}
 
+	// Something we use at Redbubble 😬
+	if command == "./script/upload_pipeline" {
+		return true
+	}
+
 	// vanilla upload command
 	if strings.HasPrefix(command, "buildkite-agent pipeline upload") {
 		return true
