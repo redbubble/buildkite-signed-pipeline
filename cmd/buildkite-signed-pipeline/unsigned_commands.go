@@ -38,6 +38,9 @@ func isUploadCommand(command string) bool {
 	if command == "./script/upload_pipeline" {
 		return true
 	}
+	if command == "script/upload_pipeline" {
+		return true
+	}
 
 	// vanilla upload command
 	if strings.HasPrefix(command, "buildkite-agent pipeline upload") {
